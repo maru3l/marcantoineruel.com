@@ -1,0 +1,43 @@
+<%= stylesheet_link_tag "components/site-header" %>
+<header role="banner" class="site-header">
+
+  <p class="site-header__site-title">
+    <a href="/" class="site-header__site-title-link">Marc-Antoine Ruel</a>
+  </p>
+
+  <button type="button" name="button" aria-hidden="true" class="site-header__mobile-nav-btn" tabindex="-1">
+    <%= stylesheet_link_tag "components/burger-menu" %>
+    <span class="burger-menu">
+      <span class="burger-menu__bread burger-menu__bread--top">
+        <span class="burger-menu__bread-crust burger-menu__bread-crust--top"></span>
+      </span>
+      <span class="burger-menu__bread burger-menu__bread--middle">
+        <span class="burger-menu__bread-crust burger-menu__bread-crust--middle"></span>
+      </span>
+      <span class="burger-menu__bread burger-menu__bread--bottom">
+        <span class="burger-menu__bread-crust burger-menu__bread-crust--bottom"></span>
+      </span>
+    </span>
+  </button>
+
+  <!-- site-navigation -->
+  <%= stylesheet_link_tag "components/site-navigation" %>
+  <nav role="navigation" class="site-navigation">
+    <div class="site-navigation__container">
+      <p class="site-navigation__title">Menu</p>
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item site-navigation__item--is-selected">
+          <a href="/" class="site-navigation__link">à propos</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="/realisations.html" class="site-navigation__link">réalisations</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="/contact.html" class="site-navigation__link">contact</a>
+        </li>
+      </ul>
+      <a href="" class="site-navigation__call-to-action">je t'attends...</a>
+    </div>
+  </nav>
+
+</header>
