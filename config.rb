@@ -44,7 +44,7 @@ configure :build do
   ignore 'stylesheets/*.scss'
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
+  # activate :asset_hash
   # activate :gzip
   activate :minify_html
 end
