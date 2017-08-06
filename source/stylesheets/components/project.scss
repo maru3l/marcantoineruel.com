@@ -1,0 +1,46 @@
+@import "../setup";
+
+.project {
+
+  $_breakpoint: 800;
+  margin-bottom: 10vh;
+
+  &__images {
+    // background-color: $color-main;
+    max-width: (1 / 3) * $base-site-width-large * 1px;
+
+    img {
+      width: 100%;
+    }
+    // &::after {
+    //   padding-bottom: percentage(9 / 16);
+    //   display: block;
+    //   content: '';
+    // }
+
+    @media (min-width: $_breakpoint * 1px) {
+      position: absolute;
+      width: (1 / 3) * 100vw;
+
+    }
+
+  }
+
+  &__description {
+
+    @media (min-width: $_breakpoint * 1px) {
+      @include padding-side;
+      padding-right: 0;
+      margin-left: (1 / 3) * 100vw;
+    }
+
+    @media(min-width: $base-site-width-large * 1px) {
+      margin-left: (1 / 3) * $base-site-width-large * 1px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: bold;
+  }
+}

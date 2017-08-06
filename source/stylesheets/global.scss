@@ -1,0 +1,26 @@
+// Global.scss
+
+// Import dependencies
+@import "normalize.css";
+
+// Application definitions
+@import "setup";
+
+// Global style
+@import "global/reset";
+@import "global/buttons";
+@import "global/typography";
+@import "global/links";
+@import "global/base";
+
+// SHAME (No, really! shame on you!)
+@import "global/shame";
+
+// @import "components/background";
+// @import "components/site-header";
+// @import "components/site-navigation";
+// @import "components/burger-menu";
+// @import "components/site-main";
+// @import "components/site-home";
+// @import "components/project";
+// @import "components/site-footer";

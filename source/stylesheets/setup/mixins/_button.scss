@@ -1,0 +1,17 @@
+@mixin button {
+  color: $color-second;
+  background-color: $color-main;
+  font-family: $font-family-secondary;
+  font-weight: 800;
+  display: inline-block;
+  border: 2px solid $color-main;
+  text-decoration: none;
+  padding: .5em 1.5em;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-main;
+    background-color: transparentize($color-main, 1);
+  }
+}

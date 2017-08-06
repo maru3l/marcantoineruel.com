@@ -1,0 +1,23 @@
+html,
+body {
+  color: $color-main;
+  font-family: $font-family-primary;
+  font-size: $font-size-small * 1px;
+  line-height: ($font-line-height-small / $font-size-small) * 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}

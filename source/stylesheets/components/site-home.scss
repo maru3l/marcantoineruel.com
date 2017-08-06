@@ -1,0 +1,47 @@
+// z-index : 300 to 999
+
+@import "../setup";
+
+.site-home {
+  $_breakpoint: 800;
+
+  &__container {
+    @include padding-side;
+    @include margin-side;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 100vw;
+    box-sizing: border-box;
+    pointer-events: auto;
+    color: $color-second;
+    line-height: 1.5em;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $base-site-width-small * 1px) {
+      font-size: (20 / 375) * 100vw;
+    }
+
+    @media (min-width: ($base-site-width-small / 20) * 30px) {
+      font-size: 30px;
+    }
+  }
+
+  &__greeting {
+    font-family: $font-family-secondary;
+    font-size: (36 / $font-size-small) * 1em;
+    line-height: (53 / 36) * 1em;
+    font-weight: bold;
+    display: block;
+  }
+
+  &__line {
+    @media (min-width: $_breakpoint * 1px) {
+      display: block;
+    }
+  }
+
+  &__typing {
+    @include cursor(true);
+  }
+}

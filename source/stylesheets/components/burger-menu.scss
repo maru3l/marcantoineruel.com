@@ -1,0 +1,85 @@
+@import "../setup";
+
+.burger-menu {
+  $_burger: &;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  &__bread {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: translate(-50%, -50%);
+    transition: all 200ms cubic-bezier(0.45, -.5, 0.55, 1.5);
+  }
+
+  &__bread-crust {
+    height: 4px;
+    border-radius: 2px;
+    background-color: $color-second;
+    display: block;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    transition: all 200ms cubic-bezier(0.45, -.5, 0.55, 1.5);
+
+    &--top {
+      width: 28px;
+      transform: translate(-16px, -12px);
+    }
+
+    &--middle {
+      width: 32px;
+      transform: translate(-50%, -2px);
+      transition: width 200ms cubic-bezier(0.45, -1, 0.55, 2);
+    }
+
+    &--bottom {
+      transform: translate(-16px, 8px);
+      width: 23px;
+    }
+  }
+
+  &--is-selected & {
+
+    &__bread--top {
+      transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    &__bread--bottom {
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+
+    &__bread-crust--top {
+      transform: translate(-16px, -2px);
+      width: 32px;
+    }
+
+    &__bread-crust--middle {
+      opacity: 0;
+      width: 0;
+    }
+
+    &__bread-crust--bottom {
+      transform: translate(-16px, -2px);
+      width: 32px;
+    }
+  }
+
+  &--is-dark {
+    .burger-menu__bread-crust {
+      background-color: $color-main;
+    }
+  }
+
+  &--is-on-top {
+    z-index: 9999;
+  }
+
+}

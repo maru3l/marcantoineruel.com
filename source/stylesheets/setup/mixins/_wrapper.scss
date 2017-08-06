@@ -1,0 +1,27 @@
+@mixin wrapper {
+}
+
+@mixin padding-side {
+  padding-right: $base-site-padding-small * 1px;
+  padding-left: $base-site-padding-small * 1px;
+
+  @media (min-width: $base-site-width-small * 1px) {
+    padding-left: ($base-site-padding-small / $base-site-width-small) * 100vw;
+    padding-right: ($base-site-padding-small / $base-site-width-small) * 100vw;
+  }
+
+  @media (min-width: ($base-site-padding-large * $base-site-width-small / $base-site-padding-small) * 1px) {
+    padding-left: $base-site-padding-large * 1px;
+    padding-right: $base-site-padding-large * 1px;
+  }
+}
+
+@mixin padding-height {
+  padding-top: ($base-site-padding-small / 2) * 1px;
+  padding-bottom: ($base-site-padding-small / 2) * 1px;
+}
+
+@mixin margin-side {
+  margin: auto;
+  max-width: $base-site-width-large * 1px;
+}

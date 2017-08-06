@@ -1,0 +1,72 @@
+// z-index : 300 to 999
+
+@import "../setup";
+
+.site-main {
+  position: relative;
+  z-index: 300;
+  pointer-events: none;
+  padding-bottom: 100px;
+
+  &__header {
+    @include padding-side;
+    @include margin-side;
+    position: fixed;
+    transform: translate(-50%, 45vh);
+    left: 50vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  &__header-container {
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+    pointer-events: auto;
+
+    h1 {
+      font-size: 60px;
+
+      @media (min-width: $base-site-width-small * 1px) {
+        font-size: (60 / 375) * 100vw;
+      }
+
+      @media (min-width: 1000px) {
+        font-size: 160px;
+      }
+
+    }
+  }
+
+  &__content {
+    top: 90vh;
+    pointer-events: auto;
+    min-height: 100vh;
+    background-color: $color-white;
+    transform-origin: 0;
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  &__skew {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: skewY(-4deg);
+    background-color: $color-white;
+    content: "";
+    height: 100%;
+    transform-origin: 0;
+    will-change: transform;
+  }
+
+  &__container {
+    @include padding-height;
+    @include padding-side;
+    @include margin-side;
+    position: relative;
+  }
+}

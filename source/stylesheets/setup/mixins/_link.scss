@@ -1,0 +1,5 @@
+@mixin link {
+  color: $color-second;
+  text-decoration: none;
+  border-bottom: 1px dashed $color-second;
+}

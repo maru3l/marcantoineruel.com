@@ -1,0 +1,11 @@
+// Make content invisible for screen reader.
+// You can also add the attribute `aria-hidden="true"` to the element you
+// don't want the screen reader to see
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden {
+  @include hidden;
+}
