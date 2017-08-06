@@ -40,16 +40,18 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-#   activate :asset_hash
-#   activate :gzip
-#   activate :minify_html
-# end
+configure :build do
+  ignore 'stylesheets/*.scss'
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  # activate :gzip
+  activate :minify_html
+end
 
 
-# activate :external_pipeline,
-#   name: :gulp,
-#   command: build? ? 'npm run build' : 'npm run dev',
-#   source: ".tmp"
+activate :external_pipeline,
+  name: :gulp,
+  command: build? ? 'npm run build' : 'npm run dev',
+  source: ".tmp",
+  latency: 1
