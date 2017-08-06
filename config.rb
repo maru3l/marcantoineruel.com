@@ -1,9 +1,9 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-# activate :autoprefixer do |prefix|
-#   prefix.browsers = "last 2 versions"
-# end
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -49,7 +49,7 @@ configure :build do
 end
 
 
-activate :external_pipeline,
-  name: :gulp,
-  command: build? ? 'npm run build' : 'npm run dev',
-  source: ".tmp"
+# activate :external_pipeline,
+#   name: :gulp,
+#   command: build? ? 'npm run build' : 'npm run dev',
+#   source: ".tmp"

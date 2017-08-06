@@ -1,2 +1,2 @@
 ​production:
-  middleman build && cp netlify_headers build _headers
+  middleman build --clean && cp netlify_headers build/_headers

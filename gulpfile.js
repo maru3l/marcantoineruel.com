@@ -62,4 +62,4 @@ gulp.task('default', ['dev']);
 
 gulp.task('dev', ['build', 'serve']);
 
-gulp.task('build', ['clean', 'styles', 'scripts']);
+gulp.task('build', ['styles', 'scripts']);
