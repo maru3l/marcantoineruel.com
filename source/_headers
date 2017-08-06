@@ -1,0 +1,27 @@
+/*
+  Link: </stylesheets/global.css>; rel=preload; as=style
+  Link: </stylesheets/background.css>; rel=preload; as=style
+  Link: </stylesheets/burger-menu.css>; rel=preload; as=style
+  Link: </stylesheets/site-footer.css>; rel=preload; as=style
+  Link: </stylesheets/site-header.css>; rel=preload; as=style
+  Link: </stylesheets/site-main.css>; rel=preload; as=style
+  Link: </stylesheets/site-navigation.css>; rel=preload; as=style
+  Link: </javascripts/main.js>; rel=preload; as=script
+  Link: </javascripts/background.js>; rel=preload; as=script
+  Link: </javascripts/burgerMenu.js>; rel=preload; as=script
+  Link: </javascripts/emailReplacer.js>; rel=preload; as=script
+  Link: </javascripts/siteHeaderTyping.js>; rel=preload; as=script
+  Link: </javascripts/Main.js>; rel=preload; as=script
+  Link: </javascripts/siteNavigation.js>; rel=preload; as=script
+  Link: </javascripts/siteTitle.js>; rel=preload; as=script
+  Link: </javascripts/typing.js>; rel=preload; as=script
+  Link: </javascripts/appController.js>; rel=preload; as=script
+  Link: </javascripts/resize.js>; rel=preload; as=script
+
+/index.html
+  Link: </stylesheets/site-home.css>; rel=preload; as=style
+
+/contact.html
+
+/realisations.html
+  Link: </stylesheets/project.css>; rel=preload; as=style
