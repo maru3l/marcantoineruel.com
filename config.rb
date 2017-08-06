@@ -43,11 +43,11 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :asset_hash
+  activate :gzip
+  activate :minify_html
 end
 
-activate :asset_hash
-activate :gzip
-activate :minify_html
 
 activate :external_pipeline,
   name: :gulp,
