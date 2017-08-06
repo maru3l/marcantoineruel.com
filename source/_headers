@@ -8,15 +8,16 @@
   Link: </stylesheets/components/site-navigation.css>; rel=preload; as=style
   Link: </javascripts/main.js>; rel=preload; as=script
   Link: </javascripts/components/background.js>; rel=preload; as=script
+  Link: </javascripts/components/siteMain.js>; rel=preload; as=script
   Link: </javascripts/components/burgerMenu.js>; rel=preload; as=script
   Link: </javascripts/components/emailReplacer.js>; rel=preload; as=script
-  Link: </javascripts/components/siteHeaderTyping.js>; rel=preload; as=script
   Link: </javascripts/components/siteNavigation.js>; rel=preload; as=script
   Link: </javascripts/components/siteTitle.js>; rel=preload; as=script
   Link: </javascripts/components/typing.js>; rel=preload; as=script
   Link: </javascripts/events/resize.js>; rel=preload; as=script
 
 /index.html
+  Link: </javascripts/components/siteHomeTyping.js>; rel=preload; as=script
   Link: </stylesheets/components/site-home.css>; rel=preload; as=style
 
 /contact.html
