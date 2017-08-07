@@ -5,7 +5,7 @@
       time: 10
     },
     {
-      text: 'En gros, je programme des site web.',
+      text: 'En gros, je programme des sites web.',
       time: 2000
     },
     {
