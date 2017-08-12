@@ -1,0 +1,44 @@
+@import "../setup";
+
+.contact-form {
+  @include padding-side;
+  @include margin-side;
+  margin-top: 20vh;
+  pointer-events: auto;
+
+  &__textarea {
+    width: 100%;
+    min-height: 40vh;
+    color: $color-white;
+    background-color: inherit;
+    border: 0;
+    font-family: $font-family-secondary;
+    font-size: 1.5em;
+    outline: 0;
+  }
+
+  &__send-btn {
+    position: relative;
+    &::before {
+      content: "\1F680";
+      position: absolute;
+      color: transparentize($color-second, 1);
+      width: 100%;
+      text-align: center;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 200ms ease-in-out;
+      font-size: 1.25em;
+    }
+
+    &:hover {
+      color: transparentize($color-second, 1);
+      background-color: transparentize($color-second, 1);
+
+      &::before {
+        color: transparentize($color-second, 0);
+      }
+    }
+  }
+}
