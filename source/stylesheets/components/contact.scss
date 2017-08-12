@@ -1,0 +1,40 @@
+@import "../setup";
+
+.contact {
+  $_breakpoint: 800;
+  @media (min-width: $_breakpoint * 1px) {
+    display: flex;
+  }
+
+  &__section {
+    margin-bottom: 10vh;
+  }
+
+  &__left-side {
+    @media (min-width: $_breakpoint * 1px) {
+      flex-basis: 62%;
+      padding-right: ($base-site-padding-small / $base-site-width-small) * 100vw;
+    }
+    @media (min-width: ($base-site-padding-large * $base-site-width-small / $base-site-padding-small) * 1px) {
+      padding-right: $base-site-padding-large * 1px;
+    }
+  }
+  //
+  &__right-side {
+    @media (min-width: $_breakpoint * 1px) {
+      flex-basis: 38%;
+      padding-left: ($base-site-padding-small / $base-site-width-small) * 100vw;
+    }
+
+    @media (min-width: ($base-site-padding-large * $base-site-width-small / $base-site-padding-small) * 1px) {
+      padding-left: $base-site-padding-large * 1px;
+    }
+  }
+
+  &__methods-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
