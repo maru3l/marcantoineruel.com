@@ -1,0 +1,12 @@
+@import "../setup";
+
+.call-to-action {
+  text-align: center;
+  height: 20vh;
+
+  &__link {
+    color: $color-white;
+    font-size: 2em;
+    border-bottom: 0;
+  }
+}
