@@ -21,7 +21,7 @@
       time: 2000
     },
     {
-      text: 'En gros, je fais du vélo (gratuitement)',
+      text: 'En gros, je fais du vélo',
       time: 1000
     },
     {
@@ -37,7 +37,7 @@
       time: 100
     },
     {
-      text: 'T\'es encore là? Qu’est-ce que tu attends pour me contacter?',
+      text: 'T\'es encore là? Qu’est-ce que t\'attends pour me contacter?',
       time: 6000
     },
   ];
