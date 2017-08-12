@@ -158,7 +158,8 @@ $breakpoint-header: 900;
       border: 2px solid $color-second;
 
       &::before {
-        content: "\1F916";
+        // content: "\1F916"; // Robot
+        content: "\1F4AC";
         position: absolute;
         color: transparentize($color-second, 1);
         width: 100%;
