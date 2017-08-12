@@ -11,10 +11,11 @@
   &__header {
     @include padding-side;
     @include margin-side;
-    position: fixed;
+    position: relative;
     transform: translate(-50%, 45vh);
     left: 50vw;
     width: 100vw;
+    height: 95vh;
     box-sizing: border-box;
   }
 
@@ -39,9 +40,7 @@
   }
 
   &__content {
-    top: 90vh;
     pointer-events: auto;
-    min-height: 100vh;
     background-color: $color-white;
     transform-origin: 0;
     position: relative;

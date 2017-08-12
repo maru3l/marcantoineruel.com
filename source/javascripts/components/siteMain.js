@@ -14,7 +14,7 @@ app.siteMain = {
 
     app.siteMain.lastScroll = evt.currentTarget.scrollY;
     app.siteMain.degree = ((6 / app.siteMain.windowHeight) * app.siteMain.lastScroll) + 4;
-    app.siteMain.top = 45 - ((40 / app.siteMain.windowHeight) * app.siteMain.lastScroll);
+    // app.siteMain.top = 45 - ((40 / app.siteMain.windowHeight) * app.siteMain.lastScroll);
 
     app.siteMain.animate();
 
@@ -22,9 +22,9 @@ app.siteMain = {
   },
   animate: function() {
     app.siteMain.skewEl.style.transform = `skewY(-${app.siteMain.degree}deg)`;
-    if (app.siteMain.top >= 20) {
-      app.siteMain.header.style.transform = `translate(-50%, ${app.siteMain.top}vh)`;
-    }
+    // if (app.siteMain.top >= 20) {
+    //   app.siteMain.header.style.transform = `translate(-50%, ${app.siteMain.top}vh)`;
+    // }
   },
   init: function () {
     window.addEventListener('scroll', app.siteMain.scrollEvent);
