@@ -9,6 +9,7 @@
   padding: .5em 1.5em;
   transition: all 200ms ease-in-out;
   cursor: pointer;
+  border-radius: 0;
 
   &:hover {
     color: $color-main;

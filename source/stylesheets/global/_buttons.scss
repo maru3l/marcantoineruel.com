@@ -1,0 +1,14 @@
+.btn {
+  @include button;
+}
+
+.btn--secondary {
+  color: $color-main;
+  background-color: $color-second;
+  border: 2px solid $color-second;
+
+  &:hover {
+    color: transparentize($color-second, 0);
+    background-color: transparentize($color-second, 1);
+  }
+}
