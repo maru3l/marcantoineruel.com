@@ -1,20 +1,46 @@
 @import "../setup";
 
 .contact-form {
-  @include padding-side;
-  @include margin-side;
   margin-top: 20vh;
   pointer-events: auto;
+  padding-bottom: 0;
+
+  .site-main__container {
+    padding-bottom: 0;
+  }
 
   &__textarea {
     width: 100%;
     min-height: 40vh;
-    color: $color-white;
+    color: $color-main;
     background-color: inherit;
     border: 0;
     font-family: $font-family-secondary;
     font-size: 1.5em;
     outline: 0;
+  }
+
+  &__send-line {
+    background-color: $color-second;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-left: calc(50% - 50vw);
+    padding-top: ($base-site-padding-small) * 1px;
+    padding-bottom: ($base-site-padding-small) * 1px;
+    padding-right: $base-site-padding-small * 1px;
+    padding-left: $base-site-padding-small * 1px;
+    margin-bottom: 0;
+
+    @media (min-width: $base-site-width-small * 1px) {
+      padding-left: ($base-site-padding-small / $base-site-width-small) * 100vw;
+      padding-right: ($base-site-padding-small / $base-site-width-small) * 100vw;
+    }
+
+    @media (min-width: ($base-site-padding-large * $base-site-width-small / $base-site-padding-small) * 1px) {
+      padding-left: $base-site-padding-large * 1px;
+      padding-right: $base-site-padding-large * 1px;
+    }
+
   }
 
   &__send-btn {
@@ -40,5 +66,37 @@
         color: transparentize($color-second, 0);
       }
     }
+  }
+
+  &__alert {
+    background-color: $color-second;
+    text-align: center;
+    color: $color-white;
+    padding: 1em 1em;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+
+    &--show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &--animate {
+      animation-name: shake;
+      animation-duration: 1ms;
+      animation-iteration-count: 250;
+
+    }
+
+    @keyframes shake {
+      from {
+        transform: rotateZ(1deg);
+      }
+      to: {
+        transform: rotateZ(-1deg);
+      }
+    }
+
   }
 }
