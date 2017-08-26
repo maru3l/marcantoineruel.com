@@ -50,16 +50,15 @@ gulp.task('serve', ['styles', 'scripts'], () => {
     proxy: 'localhost:4567',
     port: 3000,
   });
-
-  gulp.watch([`${dir.src}/stylesheets/**/*.scss`], ['styles', reload]);
-  gulp.watch([`${dir.src}/javascripts/**/*.js`], ['scripts', reload]);
-
-  gulp.watch([`${dir.dest}/stylesheets/**/*.scss`], [reload]);
-  gulp.watch([`${dir.dest}/javascripts/**/*.js`], [reload]);
 });
+
+gulp.task('watch', () => {
+  gulp.watch([`${dir.src}/stylesheets/**/*.scss`], ['styles']);
+  gulp.watch([`${dir.src}/javascripts/**/*.js`], ['scripts']);
+})
 
 gulp.task('default', ['dev']);
 
-gulp.task('dev', ['build', 'serve']);
+gulp.task('dev', ['build', 'watch']);
 
 gulp.task('build', ['styles', 'scripts']);

@@ -2,11 +2,16 @@
 <div class="site-main__content contact-form">
   <div class="site-main__container">
     <form id="js-contact-form-form">
-      <p class="contact-form__alert" id="js-contact-form-errorArea">Oups! T'as oublié de me donner ton courriel pour que je te contact &#128075;</p>
+      <p class="contact-form__alert" id="js-contact-form-errorArea"></p>
       <textarea name="message" class="contact-form__textarea" id="js-contact-form-textarea">Bonjour Marc-Antoine,
 je m'appelle </textarea>
       <p class="contact-form__send-line">
         <button class="btn contact-form__send-btn">Envoyer</button>
+
+        <input type="hidden" name="_subject" value="New message from marcantoineruel.com!" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_language" value="fr" />
+        <input type="hidden" name="_format" value="plain" />
       </p>
     </form>
   </div>
