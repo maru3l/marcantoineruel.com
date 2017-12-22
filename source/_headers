@@ -1,21 +1,15 @@
 /*
   Link: </stylesheets/global.css>; rel=preload; as=style
-  Link: </stylesheets/components/background.css>; rel=preload; as=style
-  Link: </stylesheets/components/burger-menu.css>; rel=preload; as=style
-  Link: </stylesheets/components/site-footer.css>; rel=preload; as=style
   Link: </stylesheets/components/site-header.css>; rel=preload; as=style
-  Link: </stylesheets/components/site-main.css>; rel=preload; as=style
   Link: </stylesheets/components/site-navigation.css>; rel=preload; as=style
+  Link: </stylesheets/components/site-main.css>; rel=preload; as=style
+  Link: </stylesheets/components/background.css>; rel=preload; as=style
   Link: <https://fonts.googleapis.com/css?family=Catamaran:600,800|Roboto+Mono:400,400i>; rel=preload; as=style
-  Link: </javascripts/main.js>; rel=preload; as=script
-  Link: </javascripts/components/background.js>; rel=preload; as=script
-  Link: </javascripts/components/siteMain.js>; rel=preload; as=script
-  Link: </javascripts/components/burgerMenu.js>; rel=preload; as=script
-  Link: </javascripts/components/emailReplacer.js>; rel=preload; as=script
-  Link: </javascripts/components/siteNavigation.js>; rel=preload; as=script
-  Link: </javascripts/components/siteTitle.js>; rel=preload; as=script
-  Link: </javascripts/components/typing.js>; rel=preload; as=script
-  Link: </javascripts/events/resize.js>; rel=preload; as=script
-  Link: </javascripts/components/siteHomeTyping.js>; rel=preload; as=script
   Link: </stylesheets/components/site-home.css>; rel=preload; as=style
+  Link: </stylesheets/components/site-footer.css>; rel=preload; as=style
+  Link: </javascripts/components/siteHomeTyping.js>; rel=preload; as=script
+  Link: </javascripts/components/background.js>; rel=preload; as=script
+  Link: </javascripts/components/siteTitle.js>; rel=preload; as=script
+  Link: </javascripts/events/resize.js>; rel=preload; as=script
+  Link: </javascripts/components/typing.js>; rel=preload; as=script
 /*    /index.html   301
