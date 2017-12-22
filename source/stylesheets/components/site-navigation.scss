@@ -52,6 +52,7 @@ $breakpoint-header: 900;
       position: static;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       transition: all 0ms;
     }
   }

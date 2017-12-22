@@ -49,16 +49,16 @@ gulp.task('serve', ['styles', 'scripts'], () => {
     logPrefix: 'WSK',
     proxy: 'localhost:4567',
     port: 3000,
+    reloadDelay : 1000,
+    files: [`${dir.src}/**/*.{erb,html,haml}`]
   });
-});
 
-gulp.task('watch', () => {
   gulp.watch([`${dir.src}/stylesheets/**/*.scss`], ['styles']);
-  gulp.watch([`${dir.src}/javascripts/**/*.js`], ['scripts']);
-})
+  gulp.watch([`${dir.src}/javascripts/**/*.js`], ['scripts', reload]);
+});
 
 gulp.task('default', ['dev']);
 
-gulp.task('dev', ['build', 'watch']);
+gulp.task('dev', ['serve']);
 
 gulp.task('build', ['styles', 'scripts']);
