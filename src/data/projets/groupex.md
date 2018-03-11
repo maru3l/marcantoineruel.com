@@ -1,8 +1,15 @@
 ---
 title: Groupex
 client: Groupex
-publicationDate: 2017-01-01
+publicationDate: '2017-01-01'
 tasks: Développement du thème et des plugins nécessaires.
-mandate: Refonte du site web en utilisant wordpress comme gestionnaire de contenu pour permettre l’édition du site web facilement.
-link: http://www.groupex.coop
+mandate: >-
+  Refonte du site web en utilisant wordpress comme gestionnaire de contenu pour
+  permettre l’édition du site web facilement.
+collaborators:
+  - Audrey Vigneault - design
+link: 'http://www.groupex.coop'
+stack:
+  - Wordpress
 ---
+
