@@ -16,5 +16,9 @@ ratings:
     - "**.jsx"
     - "**.css"
 
+plugins:
+  stylelint:
+    enabled: true
+
 exclude_paths:
 - static/**/*
