@@ -1,0 +1,7 @@
+[build]
+  command = "middleman build && cp source/_headers build/_headers"
+  publish = "build"
+
+[context.gatsby-refactor]
+  command = "npm run build"
+  publish = "public"
