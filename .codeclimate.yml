@@ -2,7 +2,7 @@ engines:
   eslint:
     enabled: true
   stylelint:
-    enabled: true
+    enabled: false
   duplication:
     enabled: true
     config:
@@ -15,10 +15,6 @@ ratings:
     - "**.js"
     - "**.jsx"
     - "**.css"
-
-plugins:
-  stylelint:
-    enabled: true
 
 exclude_paths:
 - static/**/*
