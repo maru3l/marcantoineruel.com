@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default () => (
-  <h1>hello</h1>
+  <main id="main" className="site-main" role="main">
+
+    <h1>hello</h1>
+
+  </main>
 );

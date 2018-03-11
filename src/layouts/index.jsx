@@ -6,6 +6,8 @@ import SiteHeader from '../components/SiteHeader';
 
 export default ({ children }) => (
   <div>
+    <a href="#main" className="visually-hidden">Sauter au contenu principal</a>
+
     <SiteHeader />
 
     {children()}
