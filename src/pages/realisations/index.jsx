@@ -18,14 +18,11 @@ export const query = graphql`
   	    node {
           frontmatter {
             title
-            slug
             client
             publicationDate
-            mandate
             tasks
-            collaborateur
+            mandate
             link
-            challenge
           }
   	    }
   	  }
