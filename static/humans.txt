@@ -1,0 +1,10 @@
+/* TEAM */
+  Web developer: Marc-Antoine Ruel
+  Contact: hello [at] marcantoineruel.com
+  Site: https://www.marcantoineruel.com
+  From: Quebec, Quebec, Canada
+
+/* SITE */
+  Language: French
+  Doctype: HTML5
+  IDE: Atom
