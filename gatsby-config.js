@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer');
 
-module.export = {
+module.exports = {
   siteMetadata: {
     title: 'Marc-Antoine Ruel',
   },
@@ -17,25 +17,32 @@ module.export = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'Catamaran:600,800',
-          'Roboto Mono:400,400i',
-        ]
+        fonts: ['Catamaran:600,800', 'Roboto Mono:400,400i'],
       },
     },
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: 'fr',
-        useLangKeyLayout: false
+        useLangKeyLayout: false,
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        path: `${__dirname}/src/data/projets`,
+        name: 'projets',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets/images`,
+        name: 'images',
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-netlify',
-  ]
-}
+  ],
+};
