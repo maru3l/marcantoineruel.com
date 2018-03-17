@@ -7,4 +7,31 @@
 /* SITE */
   Language: French
   Doctype: HTML5
-  IDE: Atom
+
+/* TECHNOLOGY */
+React
+https://reactjs.org
+
+Gatsby - Static site generator
+https://www.gatsbyjs.org
+
+Sass - CSS pre-processor
+http://sass-lang.com
+
+GitHub - Code collaboration & hosting
+https://github.com
+
+JavaScript libraries include:
+
+/* TOOLS */
+Atom - Text editor
+https://atom.io
+
+Sketch - Graphics editor
+https://sketchapp.com
+
+Illustrator & Photoshop - Graphics editor
+https://www.adobe.com/ca/
+
+Slack - Emojis and GIFs
+https://slack.com/
