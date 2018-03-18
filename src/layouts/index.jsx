@@ -12,6 +12,10 @@ export default ({ children }) => (
 
     <SiteHeader />
 
-    {children()}
+    <main id="main" role="main">
+
+      {children()}
+
+    </main>
   </div>
 );
