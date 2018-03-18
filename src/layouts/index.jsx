@@ -2,6 +2,8 @@ import React from 'react';
 
 import 'normalize.css';
 
+import './../assets/styles/main.scss';
+
 import SiteHeader from '../components/SiteHeader';
 
 export default ({ children }) => (
