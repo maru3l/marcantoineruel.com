@@ -10,8 +10,9 @@ const ListItemLink = ({ to, children }) => (
 export default () => (
   <nav>
     <ul>
-      <ListItemLink to="/">Qui suis-je?</ListItemLink>
+      <ListItemLink to="/">Moi</ListItemLink>
       <ListItemLink to="/realisations/">Réalisations</ListItemLink>
+      <ListItemLink to="/blogue/">Blogue</ListItemLink>
       <ListItemLink to="/contact/">Contact</ListItemLink>
     </ul>
   </nav>
