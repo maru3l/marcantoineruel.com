@@ -1,4 +1,5 @@
 @mixin wrapper() {
+  margin: auto;
   max-width: 1296px;
   width: 90vw;
   padding-left: my-padding-calculation();
@@ -6,7 +7,6 @@
 
   @media(min-width: 1440px) {
     width: #{(1296 - (my-padding-calculation(1440) * 2)) * 1px};
-    margin: auto;
     padding-left: my-padding-calculation(1440);
     padding-right: my-padding-calculation(1440);
   }
