@@ -1,11 +1,43 @@
 html,
 body {
+  $_font-breakpoint: 1024;
   font-family: $font-family;
-  font-size: 18px;
+  font-size: #{$font-size-small * 1px};
   line-height: 1.5em;
   color: $color-primary;
+
+  @media(min-width: #{$_font-breakpoint * 1px}) {
+    font-size: #{($font-size-small / $_font-breakpoint) * 100vw};
+  }
+
+  @media(min-width: #{$font-size-large * $_font-breakpoint / $font-size-small * 1px}) {
+    font-size: #{$font-size-large * 1px};
+  }
 }
 
 a {
   color: $color-secondary;
+}
+
+h1,
+.title {
+  font-size: 2.4rem;
+  font-family: $font-family-header;
+  color: $color-secondary;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: $font-family-header;
+  color: $color-secondary;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-family: $font-family-header;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-family: $font-family-header;
 }
