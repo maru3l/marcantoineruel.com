@@ -1,0 +1,66 @@
+@import "../../../assets/styles/setup.scss";
+
+.menu-button {
+  $_parent: &;
+  $_width: 45;
+  $_height: 45;
+  $_bar-width: 25;
+  $_bar-height: 4;
+
+  width: #{$_width * 1px};
+  height: #{$_height * 1px};
+  background-color: inherit;
+  border: 0;
+  position: relative;
+  outline: 0;
+
+  &__bread {
+    width: #{$_width * 1px};
+    height: #{$_height * 1px};
+    position: absolute;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    transition: all 100ms;
+
+    &:first-child #{$_parent}__bread-crust {
+      transform: translateY(-4px);
+    }
+
+    &:last-child #{$_parent}__bread-crust {
+      transform: translateY(4px);
+    }
+  }
+
+  &__bread-crust {
+    width: #{$_bar-width * 1px};
+    height: #{$_bar-height * 1px};
+    background-color: $color-secondary;
+    display: block;
+    border-radius: #{$_bar-height * 1px};
+    position: absolute;
+    top: #{(($_height / 2) - ($_bar-height / 2)) * 1px};
+    left: #{(($_width / 2) - ($_bar-width / 2)) * 1px};
+    will-change: transform;
+    transition: all 400ms 100ms;
+  }
+
+  &--is-open &__bread {
+    transition: all 100ms 75ms;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--is-open &__bread &__bread-crust {
+    transform: translateY(0);
+    transition: all 75ms;
+  }
+
+
+}
