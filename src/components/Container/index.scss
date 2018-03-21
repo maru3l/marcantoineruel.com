@@ -1,0 +1,6 @@
+@import "../../assets/styles/setup.scss";
+
+.site-container {
+  @include wrapper;
+  background-color: $color-white;
+}
