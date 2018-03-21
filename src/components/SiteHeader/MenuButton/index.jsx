@@ -7,7 +7,7 @@ export default props => (
     onClick={() => props.onClick()}
     className={
       props.open
-        ? 'menu-button menu-button--is-open'
+        ? 'menu-button menu-button--is-open menu-button--is-dark'
         : 'menu-button'}
   >
     <span className="menu-button__bread">

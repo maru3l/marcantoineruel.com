@@ -62,5 +62,9 @@
     transition: all 75ms;
   }
 
+  &--is-dark &__bread &__bread-crust {
+    background-color: $color-primary;
+  }
+
 
 }
