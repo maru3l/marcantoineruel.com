@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Cursor from '../../Cursor';
+
 import './styles.scss';
 
 export default class SiteLogor extends React.Component {
@@ -15,7 +17,7 @@ export default class SiteLogor extends React.Component {
     const content = 'Marc';
 
     return (
-      <p className="site-logo">{content}_</p>
+      <p className="site-logo">{content}<Cursor flashing='true' /></p>
     )
   }
 }
