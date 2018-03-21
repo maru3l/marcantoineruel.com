@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npm run develop",
-    "develop": "gatsby develop",
-    "dev": "npm run dev",
+    "develop": "gatsby develop --host 0.0.0.0",
+    "dev": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
