@@ -1,9 +1,14 @@
 import React from 'react';
 
+import Container from '../../components/Container';
+
 export default ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
-    <h1>Réalisations</h1>
+    <Container title="Les vraies affaires">
+      <h2>Ce que j'ai réalisé</h2>
+      <h2>Sur quoi je m’amuse</h2>
+    </Container>
   );
 };
 
