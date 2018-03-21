@@ -3,7 +3,7 @@
   text-decoration: none;
   padding: .5em 1em;
   background-color: $color-secondary;
-  color: inherit;
+  color: $color-primary;
   font-family: $font-family-header;
   font-weight: 800;
   cursor: pointer;
@@ -16,5 +16,16 @@
 
   &--outline {
     background-color: inherit;
+  }
+
+  &--reverse {
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    color: $color-secondary;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
