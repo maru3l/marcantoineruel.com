@@ -13,7 +13,8 @@
   transform-origin: 0;
   transform: skewY(-12deg);
   height: 0;
-  transition: all 350ms;
+  transition: all 350ms ease-in-out;
+  z-index: 1;
 
   &--is-open {
     height: 100vh;
@@ -26,11 +27,11 @@
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    height: 80%;
+    height: 80vh;
     align-items: flex-start;
     position: absolute;
     top: 0;
-    transition: all 350ms;
+    transition: all 350ms ease-in-out;
     transform: skewY(12deg);
 
     #{$_parent}--is-open & {
