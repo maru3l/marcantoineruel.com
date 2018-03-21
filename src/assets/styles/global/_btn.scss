@@ -1,0 +1,20 @@
+.btn {
+  border: 2px solid $color-secondary;
+  text-decoration: none;
+  padding: .5em 1em;
+  background-color: $color-secondary;
+  color: inherit;
+  font-family: $font-family-header;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    background-color: transparentize($color-secondary, 1);
+    color: $color-secondary;
+  }
+
+  &--outline {
+    background-color: inherit;
+  }
+}
