@@ -1,0 +1,61 @@
+@import "../../../assets/styles/setup.scss";
+
+.site-navigation {
+  $_parent: &;
+  background-color: $color-secondary;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 1.2rem;
+  will-change: auto;
+  transform-origin: 0;
+  transform: skewY(-12deg);
+  height: 0;
+  transition: all 350ms;
+
+  &--is-open {
+    height: 100vh;
+    transform: skewY(0);
+  }
+
+  &__container {
+    @include wrapper;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 80%;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    transition: all 350ms;
+    transform: skewY(12deg);
+
+    #{$_parent}--is-open & {
+      transform: skewY(0);
+    }
+  }
+
+  &__title {
+    @extend %logo;
+
+    color: $color-primary;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+  }
+
+  &__link {
+    color: $color-primary;
+    text-decoration: none;
+    font-family: $font-family-header;
+    text-transform: lowercase;
+    // font-weight: 800;
+    line-height: 1.75em;
+  }
+}
