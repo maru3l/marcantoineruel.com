@@ -1,0 +1,11 @@
+@function my-margin-calculation($screen-size:100vw) {
+  @return $screen-size * $size-ratio-margin
+}
+
+@function my-padding-calculation($screen-size:100vw) {
+  @return $screen-size * $size-ratio-padding
+}
+
+@function my-width-calculation($screen-size:100vw) {
+  @return ($screen-size * $size-ratio-total-width) - (my-padding-calculation($screen-size) * 2)
+}
