@@ -14,6 +14,7 @@ export default class SiteHeader extends React.Component {
     this.state = {
       menuOpen: false,
       isDesktop: false,
+      longLogo: false,
     }
   }
 
@@ -39,13 +40,21 @@ export default class SiteHeader extends React.Component {
     if (width >= 768 && !this.state.isDesktop) {
       this.setState({ isDesktop: true, menuOpen: false });
     }
+
+    if (width < 1024 && this.state.longLogo) {
+      this.setState({ longLogo: false });
+    }
+
+    if (width >= 1024 && !this.state.longLogo) {
+      this.setState({ longLogo: true });
+    }
   }
 
   render () {
     return (
       <header className="site-header">
         <div className="site-header__wrapper">
-          <SiteLogo />
+          <SiteLogo long={this.state.longLogo} />
           <SiteNavigation open={this.state.menuOpen} desktop={this.state.isDesktop} />
           <MenuButton
             open={this.state.menuOpen}
