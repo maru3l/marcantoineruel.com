@@ -1,9 +1,7 @@
 @mixin wrapper() {
-  $_max-width: #{(1296 - (my-padding-calculation(1440px) * 2))};
-
   margin: auto;
-  max-width: $_max-width;
-  width: 90vw;
+  max-width: my-width-calculation(1440px);
+  width: my-width-calculation();
   padding-left: my-padding-calculation();
   padding-right: my-padding-calculation();
 
