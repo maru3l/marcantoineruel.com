@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import classNames from 'classnames';
 
 import Cursor from '../../Cursor';
 
@@ -12,18 +13,19 @@ const ListItemLink = ({ to, children }) => (
 )
 
 export default class SiteNavigation extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render () {
+    const siteNavigationClassNames = classNames(
+      'site-navigation',
+      {'site-navigation--is-open': this.props.open},
+      {'site-navigation--is-desktop': this.props.desktop}
+    );
+
+    const buttonClassNames = classNames(
+      'btn',
+      {'btn--reverse': !this.props.desktop}
+    );
     return (
-      <nav className={
-        this.props.open
-          ? "site-navigation site-navigation--is-open"
-          : "site-navigation"
-        }
-      >
+      <nav className={siteNavigationClassNames}>
         <div className="site-navigation__container">
           <p className="site-navigation__title">Menu<Cursor flashing='true' /></p>
 
@@ -34,7 +36,7 @@ export default class SiteNavigation extends React.Component {
             <ListItemLink to="/contact/">Contact</ListItemLink>
           </ul>
 
-          <a href="https://www.messenger.com/t/maru3l" className="btn btn--reverse" target="_blank" rel='noopener noreferrer'>je t'attends...</a>
+          <a href="https://www.messenger.com/t/maru3l" className={buttonClassNames} target="_blank" rel='noopener noreferrer'>je t'attends...</a>
         </div>
       </nav>
     )
