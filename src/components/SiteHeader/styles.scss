@@ -1,12 +1,14 @@
 @import "../../assets/styles/setup.scss";
 
 .site-header {
-  @include wrapper;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   position: sticky;
   top: 0;
+
+  &__wrapper {
+    @include wrapper;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

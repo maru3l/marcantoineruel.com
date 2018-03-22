@@ -18,9 +18,11 @@ export default class SiteHeader extends React.Component {
   render () {
     return (
       <header className="site-header">
-        <SiteLogo />
-        <MenuButton open={this.state.menuOpen} onClick={() => this.setState({ menuOpen: !this.state.menuOpen })} />
-        <SiteNavigation open={this.state.menuOpen} />
+        <div className="site-header__wrapper">
+          <SiteLogo />
+          <MenuButton open={this.state.menuOpen} onClick={() => this.setState({ menuOpen: !this.state.menuOpen })} />
+          <SiteNavigation open={this.state.menuOpen} />
+        </div>
       </header>
     )
   }
