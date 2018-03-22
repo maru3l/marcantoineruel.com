@@ -8,7 +8,11 @@ import './styles.scss';
 
 const ListItemLink = ({ to, children }) => (
   <li>
-    <Link to={to} className="site-navigation__link">{children}</Link>
+    <Link
+      to={to}
+      className="site-navigation__link"
+      activeClassName="site-navigation__link--is-active"
+    >{children}</Link>
   </li>
 )
 
@@ -31,9 +35,9 @@ export default class SiteNavigation extends React.Component {
 
           <ul className="site-navigation__list">
             <ListItemLink to="/">À propos</ListItemLink>
-            <ListItemLink to="/realisations/">Réalisations</ListItemLink>
-            <ListItemLink to="/blogue/">Blogue</ListItemLink>
-            <ListItemLink to="/contact/">Contact</ListItemLink>
+            <ListItemLink to="/realisations">Réalisations</ListItemLink>
+            <ListItemLink to="/blogue">Blogue</ListItemLink>
+            <ListItemLink to="/contact">Contact</ListItemLink>
           </ul>
 
           <a href="https://www.messenger.com/t/maru3l" className={buttonClassNames} target="_blank" rel='noopener noreferrer'>je t'attends...</a>
