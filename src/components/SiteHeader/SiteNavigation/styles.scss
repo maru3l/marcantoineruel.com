@@ -2,6 +2,7 @@
 
 .site-navigation {
   $_parent: &;
+
   background-color: $color-secondary;
   width: 100vw;
   position: absolute;
@@ -19,6 +20,52 @@
   &--is-open {
     height: 100vh;
     transform: skewY(0);
+
+    #{$_parent}__container {
+      transform: skewY(0);
+    }
+  }
+
+  &--is-desktop {
+    background-color: inherit;
+    position: inherit;
+    font-size: inherit;
+    transform: inherit;
+    height: inherit;
+    overflow: inherit;
+    width: auto;
+    flex: 2 2;
+
+    #{$_parent}__container {
+      transform: inherit;
+      position: inherit;
+      margin: 0;
+      padding: 0;
+      height: inherit;
+      width: inherit;
+
+
+      flex-flow: row;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #{$_parent}__title {
+      display: none;
+    }
+
+    #{$_parent}__list {
+      display: flex;
+      justify-content: center;
+      flex: 2 2;
+      margin: 0;
+    }
+
+    #{$_parent}__link {
+      color: $color-secondary;
+      padding: 0 .5em;
+    }
   }
 
   &__container {
@@ -34,10 +81,6 @@
     top: 0;
     transition: all 350ms ease-in-out;
     transform: skewY(12deg);
-
-    #{$_parent}--is-open & {
-      transform: skewY(0);
-    }
   }
 
   &__title {
@@ -49,7 +92,6 @@
   &__list {
     list-style: none;
     padding: 0;
-
   }
 
   &__link {
@@ -57,7 +99,6 @@
     text-decoration: none;
     font-family: $font-family-header;
     text-transform: lowercase;
-    // font-weight: 800;
     line-height: 1.75em;
   }
 }
