@@ -1,5 +1,11 @@
 // SIZES
 
+// RATIOS
+$size-ratio-guttier: .016;
+$size-ratio-padding: ($size-ratio-guttier / 2);
+$size-ratio-total-width: .9;
+$size-ratio-margin: (1 - $size-ratio-total-width) / 2;
+
 // DEVICES
 $size-mobile-small: 320;
 $size-mobile-medium: 375;
