@@ -9,6 +9,7 @@ import './styles.scss';
 const ListItemLink = ({ to, children }) => (
   <li>
     <Link
+      exact
       to={to}
       className="site-navigation__link"
       activeClassName="site-navigation__link--is-active"
