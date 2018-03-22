@@ -21,6 +21,7 @@
   "homepage": "https://github.com/maru3l/marcantoineruel.com#readme",
   "dependencies": {
     "autoprefixer": "^8.2.0",
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.239",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-fonts": "0.0.3",
