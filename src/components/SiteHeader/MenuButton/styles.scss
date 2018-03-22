@@ -67,5 +67,7 @@
     background-color: $color-primary;
   }
 
-
+  &--hidden {
+    display: none;
+  }
 }

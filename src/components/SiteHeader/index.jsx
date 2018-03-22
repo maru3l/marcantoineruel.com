@@ -58,6 +58,7 @@ export default class SiteHeader extends React.Component {
           <SiteNavigation open={this.state.menuOpen} desktop={this.state.isDesktop} />
           <MenuButton
             open={this.state.menuOpen}
+            hidden={this.state.isDesktop}
             onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}
           />
         </div>
