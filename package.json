@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/maru3l/marcantoineruel.com#readme",
   "dependencies": {
-    "autoprefixer": "^8.1.0",
-    "gatsby": "^1.9.236",
+    "autoprefixer": "^8.2.0",
+    "gatsby": "^1.9.239",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-fonts": "0.0.3",
     "gatsby-plugin-i18n": "^0.4.1",
@@ -39,7 +39,7 @@
     "react-intl": "^2.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
