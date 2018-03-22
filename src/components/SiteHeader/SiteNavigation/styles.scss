@@ -24,6 +24,7 @@
   &__container {
     @include wrapper;
 
+    margin: auto my-margin-calculation();
     display: flex;
     flex-flow: column;
     justify-content: space-between;
