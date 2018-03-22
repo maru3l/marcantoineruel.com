@@ -14,12 +14,15 @@
   transform-origin: 0;
   transform: skewY(-12deg);
   height: 0;
-  transition: all 350ms ease-in-out;
   z-index: 1;
+  opacity: 0;
+  transition: transform 350ms ease-in-out, height 350ms ease-in-out;
 
   &--is-open {
     height: 100vh;
     transform: skewY(0);
+    opacity: 1;
+    transition: transform 350ms ease-in-out, height 350ms ease-in-out;
 
     #{$_parent}__container {
       transform: skewY(0);
@@ -35,6 +38,8 @@
     overflow: inherit;
     width: auto;
     flex: 2 2;
+    transition: opacity 400ms;
+    opacity: 1;
 
     #{$_parent}__container {
       transform: inherit;
@@ -43,6 +48,7 @@
       padding: 0;
       height: inherit;
       width: inherit;
+      transition: inherit;
 
 
       flex-flow: row;
