@@ -18,11 +18,8 @@ export default class SiteHeader extends React.Component {
     }
   }
 
-  componentWillMount() {
-    this.handleResize()
-  }
-
   componentDidMount() {
+    this.handleResize()
     window.addEventListener('resize', () => this.handleResize()); // FIXME: Change for global window resize
   }
 
