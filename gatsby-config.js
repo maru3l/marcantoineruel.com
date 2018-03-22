@@ -5,6 +5,12 @@ module.exports = {
     title: 'Marc-Antoine Ruel',
   },
   plugins: [
+    {
+  		resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+  		options: {
+  			production: true,
+  		},
+  	},
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-postcss-sass`,
