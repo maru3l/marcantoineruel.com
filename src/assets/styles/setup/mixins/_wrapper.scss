@@ -1,18 +1,14 @@
 @mixin wrapper() {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  max-width: 1296px;
+  $_max-width: #{(1296 - (my-padding-calculation(1440px) * 2))};
+
+  margin: auto;
+  max-width: $_max-width;
   width: 90vw;
   padding-left: my-padding-calculation();
   padding-right: my-padding-calculation();
 
   @media(min-width: 1440px) {
-    $_width: #{(1296 - (my-padding-calculation(1440) * 2)) * 1px};
-
-    margin-left: calc(50vw - #{$_width / 2});
-    margin-right: calc(50vw - #{$_width / 2});
-    width: $_width;
-    padding-left: my-padding-calculation(1440);
-    padding-right: my-padding-calculation(1440);
+    padding-left: my-padding-calculation(1440px);
+    padding-right: my-padding-calculation(1440px);
   }
 }
