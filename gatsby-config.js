@@ -7,9 +7,9 @@ module.exports = {
   plugins: [
     {
   		resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-  		options: {
-  			production: true,
-  		},
+  		// options: {
+  		// 	production: true,
+  		// },
   	},
     'gatsby-plugin-react-helmet',
     {
