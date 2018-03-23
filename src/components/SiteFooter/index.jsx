@@ -16,6 +16,10 @@ export default class SiteFooter extends React.Component {
     window.addEventListener('scroll', () => this.handleScroll())
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', () => this.handleScroll())
+  }
+
   handleScroll() {
     const scroll = window.scrollY;
 
