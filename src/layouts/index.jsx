@@ -5,6 +5,7 @@ import 'normalize.css';
 import './../assets/styles/main.scss';
 
 import SiteHeader from '../components/SiteHeader';
+import SiteFooter from '../components/SiteFooter';
 
 export default ({ children }) => (
   <div>
@@ -17,5 +18,8 @@ export default ({ children }) => (
       {children()}
 
     </main>
+
+    <SiteFooter />
+
   </div>
 );
