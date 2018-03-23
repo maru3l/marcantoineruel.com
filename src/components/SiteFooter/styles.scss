@@ -1,0 +1,27 @@
+@import "../../assets/styles/setup.scss";
+
+.site-footer {
+  @include wrapper-with-margin-calc;
+
+  color: $color-secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+
+  &__lang-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__lang-item {
+    display: inline-block;
+
+    &:not(:last-child)::after {
+      content: "//";
+      margin: 0 .25em;
+    }
+  }
+}
