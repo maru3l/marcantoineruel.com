@@ -16,13 +16,13 @@
   height: 0;
   z-index: 1;
   opacity: 0;
-  transition: transform 350ms ease-in-out, height 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, height 350ms ease-in-out, opacity 0ms 350ms;
 
   &--is-open {
     height: 100vh;
     transform: skewY(0);
     opacity: 1;
-    transition: transform 350ms ease-in-out, height 350ms ease-in-out;
+    transition: transform 350ms ease-in-out, height 350ms ease-in-out, opacity 0ms;
 
     #{$_parent}__container {
       transform: skewY(0);
@@ -80,9 +80,8 @@
   }
 
   &__container {
-    @include wrapper;
+    @include wrapper-with-margin-calc;
 
-    margin: auto my-margin-calculation();
     display: flex;
     flex-flow: column;
     justify-content: space-between;

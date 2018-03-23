@@ -13,7 +13,9 @@ const ListItemLink = ({ to, children }) => (
       to={to}
       className="site-navigation__link"
       activeClassName="site-navigation__link--is-active"
-    >{children}</Link>
+    >
+      {children}
+    </Link>
   </li>
 )
 
