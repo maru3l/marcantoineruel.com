@@ -7,8 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  transition: transform 400ms;
+
+  &--hidden {
+    transform: translateY(100%);
+  }
 
   &__lang-list {
     list-style: none;
