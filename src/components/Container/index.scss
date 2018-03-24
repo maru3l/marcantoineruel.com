@@ -1,6 +1,27 @@
 @import "../../assets/styles/setup.scss";
 
 .site-container {
-  @include wrapper;
-  background-color: $color-white;
+  $_parent: &;
+
+  &__content {
+    background-color: $color-white;
+  }
+
+  &__skew {
+    height: 10vh;
+    width: 100vw;
+    background-color: $color-white;
+    transform-origin: 0;
+    will-change: transform;
+    transition: transform 800ms;
+  }
+
+  &__wrapper {
+    @include wrapper;
+    padding-bottom: 10vh;
+  }
+
+  &--is-loaded &__skew {
+    transform: skewY(-4deg);
+  }
 }

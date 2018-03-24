@@ -1,3 +1,21 @@
-.container-header {
+@import "../../../assets/styles/setup.scss";
 
+.container-header {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  transition: all 1000ms;
+
+  &--is-loaded {
+    min-height: 90vh;
+  }
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__title {
+    @extend %h1;
+  }
 }
