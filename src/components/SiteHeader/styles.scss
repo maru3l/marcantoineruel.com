@@ -1,11 +1,11 @@
 @import "../../assets/styles/setup.scss";
 
 .site-header {
-  position: sticky;
+  position: absolute;
   top: 0;
 
   &__wrapper {
-    @include wrapper;
+    @include wrapper-with-margin-calc;
 
     display: flex;
     align-items: center;
